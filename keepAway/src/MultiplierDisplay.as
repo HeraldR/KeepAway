@@ -11,7 +11,7 @@ package
 	{
 		public var multiplierText:Text = new Text("x1");
 		public var multiplierNumber:uint = 1;
-		public var multiplierTimer:MultiplierTimer;
+		public var multiplierTimer:MultiplierTimer; // this needs to be refactored with the score hud
 		
 		public function MultiplierDisplay() 
 		{

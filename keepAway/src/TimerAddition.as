@@ -11,7 +11,7 @@ package
 	public class TimerAddition extends Entity
 	{
 		private var timerAdditionText:Text = new Text("0", 0, 0);
-		private var alphaTween:VarTween;
+		private var alphaTween:VarTween; 
 		
 		public function TimerAddition() 
 		{

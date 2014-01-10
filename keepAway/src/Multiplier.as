@@ -13,7 +13,7 @@ package
 	 */
 	public class Multiplier extends Entity {
 		private var sprite:Spritemap = new Spritemap(GC.MULTIPLIER, 32, 32);
-		private var multiplierDisplay:MultiplierDisplay;
+		private var multiplierDisplay:MultiplierDisplay;  // change this to a score hud
 		private var hitTimer:uint = 0;
 		private var tweenToWhite:ColorTween;
 		private var tweenToOriginalColor:ColorTween;

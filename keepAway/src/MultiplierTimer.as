@@ -10,7 +10,7 @@ package
 	public class MultiplierTimer extends Entity
 	{
 		private var multiplierTimerText:Text = new Text("60", 128, 64);
-		private var timerAddition:TimerAddition;
+		private var timerAddition:TimerAddition; // yadda yadda score hud
 		private var timer:uint = 0;
 		
 		public function MultiplierTimer() 
@@ -19,7 +19,7 @@ package
 			multiplierTimerText.color = 0xFF11FF;
 			multiplierTimerText.x = FP.width - 64;
 			multiplierTimerText.y = 16;
-			timerAddition = new TimerAddition();
+			timerAddition = new TimerAddition();  
 			timerAddition.x = multiplierTimerText.x + 32;
 			timerAddition.y = multiplierTimerText.y;
 		}
