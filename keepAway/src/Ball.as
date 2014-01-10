@@ -22,9 +22,7 @@ package
 		private var friction:Number = .05;
 		private const MAX_SPEED:Number = 10;
 		
-		private var timer:uint = 0;
-		private var collisionYTime:uint = 0;
-		private var collisionXTime:uint = 0;
+		// these should probably be points, but whatever
 		private var tick1x:Number = 0;
 		private var tick2x:Number = 0;
 		private var tick3x:Number = 0;
@@ -58,8 +56,13 @@ package
 			addTween(squishXY, false);		
 		}
 		
+		override public function added():void {
+			ballImpactEmitter = new ImpactEmitter();
+			world.add(ballImpactEmitter);
+		}
+		
 		override public function update():void {
-			timer = timer + 1;
+			// I should probably be looping through these or using an array, but whatever
 			tick5x = tick4x;
 			tick4x = tick3x;
 			tick3x = tick2x;
@@ -71,7 +74,6 @@ package
 			tick3y = tick2y;
 			tick2y = tick1y;
 			tick1y = y;
-			
 			
 			updateMagnet();
 			
@@ -100,42 +102,33 @@ package
 				if ( (a >= 210) && (a < 270) ) {  // greater than 225 and less than 270 would give a 45 degree angle before pushing up. 
 												//	by increasing the angle by 15 degrees to 60 it makes the ball more likely to go up when going horizontally. this can be tweaked if it's too frequent
 					if (!collide("grid", x - 5, y - 5) ) {
-						x = x - 5;
-						y = y - 5;
+						x = x - 3;
+						y = y - 3;
 					}
 				} else if ( (a >= 270) && (a <= 330) ) {  // same idea here where 270 to 315 is increased to 330 for a 60 degree angle
 					if (!collide("grid", x + 5, y - 5) ) {
-						x = x + 5;
-						y = y - 5;
+						x = x + 3;
+						y = y - 3;
 					}
 				}
 			}
 		}
 		
 		override public function moveCollideX(e:Entity):Boolean {
-			collisionXTime = timer;
 			vx = -vx * .5;
 			squishXY.tween(ballSpriteMap, { scaleX:.8, scaleY:1.2 }, .1, Ease.quadOut);
 			squishXY.start();
-			ballImpactEmitter.xImpact();
+			ballImpactEmitter.xImpact(this);
 			return true;
 		}
 		
 		override public function moveCollideY(e:Entity):Boolean {
-			if ((collisionXTime == timer) && (vy < 0)) {
-				trace("vx: ", vx);
-				trace("vy: ", vy);
-			} else {
-				vy = -vy * .5;
-			}
-		//	vy = -vy * .5;
+			vy = -vy * .5;
 			ballSpriteMap.scaleX = 1.1;
 			ballSpriteMap.scaleY = .9;
 			squishXY.tween(ballSpriteMap, { scaleX:1.2, scaleY:.8 }, .1, Ease.quadOut);
 			squishXY.start();
-			ballImpactEmitter.yImpact();
-			
-			collisionYTime = timer;
+			ballImpactEmitter.yImpact(this);
 			return true;
 		}
 		

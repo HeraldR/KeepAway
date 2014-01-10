@@ -42,18 +42,8 @@ package
 			map.type = "grid";
 			add(map);
 			
-			// this is pretty ugly, I'll fix it in a later version as I add more emitters, but not for ld48
-			impact = new ImpactEmitter;
-			add(impact);
-			impact.impactBall = ball;
-			ball.ballImpactEmitter = impact;
-			
-			goal = new Goal((32 * 19), (32 * 3))
-			add(goal);
-			
 			add(new PulsingEnemy((32 * 2), (32 * 2)));
 			add(new PathfindingEnemy((32 * 3), (32 * 2), _mapGrid, 5, GC.PULSEENEMY));
-			add(new Score());
 			add(new HUD);
 		}
 		

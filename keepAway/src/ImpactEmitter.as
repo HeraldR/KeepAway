@@ -12,7 +12,7 @@ package
 	{
 		private var impactEmitter:Emitter;
 		private const EXPLOSION_SIZE:uint = 5;
-		public var impactBall:Ball;
+		private var impactBall:Ball;
 		
 		public function ImpactEmitter()
 		{
@@ -25,7 +25,7 @@ package
 			graphic = impactEmitter;
 		}
 		
-		public function xImpact():void {
+		public function xImpact(impactBall:Ball):void {
 				for (var i:uint = 0; i < EXPLOSION_SIZE; i++) {
 				if (impactBall.vx < 0) {
 					impactEmitter.emit("impact", impactBall.x + 32, impactBall.y + impactBall.halfHeight);
@@ -35,7 +35,7 @@ package
 			}
 		}
 		
-		public function yImpact():void {
+		public function yImpact(impactBall:Ball):void {
 			for (var i:uint = 0; i < EXPLOSION_SIZE; i++) {
 				if (impactBall.vy < 0) {
 					impactEmitter.emit("impact", impactBall.x + impactBall.halfHeight, impactBall.y + impactBall.height);

@@ -27,6 +27,9 @@ package
 			
 			multiplierTimer = new MultiplierTimer(FP.width - 64, 16);
 			world.add(multiplierTimer);
+			
+			score = new Score(FP.width - 256, FP.height - 48);
+			world.add(score);
 		}
 		
 		public function multiplierHit():void {
