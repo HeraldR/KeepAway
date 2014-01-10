@@ -13,7 +13,7 @@ package
 	 */
 	public class Multiplier extends Entity {
 		private var sprite:Spritemap = new Spritemap(GC.MULTIPLIER, 32, 32);
-		private var multiplierDisplay:MultiplierDisplay;  // change this to a score hud
+		private var hud:HUD;
 		private var hitTimer:uint = 0;
 		private var tweenToWhite:ColorTween;
 		private var tweenToOriginalColor:ColorTween;
@@ -36,10 +36,10 @@ package
 		
 		override public function update():void {
 			super.update();
-			if (multiplierDisplay == null) { multiplierDisplay = MultiplierDisplay(world.classFirst(MultiplierDisplay)); }
+			if (hud == null) { hud = HUD(world.classFirst(HUD)); }
 			if (collide("ball", x, y)) {
 				if(hitTimer == 0) {
-					multiplierDisplay.increment();
+					hud.multiplierHit();
 					hitAnimations();
 					shake(30, 4);
 					hitTimer = 120;

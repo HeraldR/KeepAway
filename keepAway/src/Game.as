@@ -54,32 +54,7 @@ package
 			add(new PulsingEnemy((32 * 2), (32 * 2)));
 			add(new PathfindingEnemy((32 * 3), (32 * 2), _mapGrid, 5, GC.PULSEENEMY));
 			add(new Score());
-			add(new MultiplierDisplay());
-			add(new MultiplierTimer());
-
-		}
-		
-		override public function update():void {
-			super.update();
-		}
-		
-		
-		/* Everything in here couldn't go in the constructor because it relied on fetching entities 
-		 * added to the world, which doesn't happen until the end of a frame. */
-		override public function begin():void {
-			super.begin();
-			var pulsingEnemyList:Array = [];
-			FP.world.getType("pulsingenemy", pulsingEnemyList);
-			for each(var e:PulsingEnemy in pulsingEnemyList) {
-				e.targetBall = ball;
-			}
-			
-		//	var pathfindingEnemyList:Array = [];
-		//	FP.world.getType("pathfindingenemy", pathfindingEnemyList);
-		//	for each(var f:PathfindingEnemy in pathfindingEnemyList) {
-		//		f.targetBall = ball;
-		//		f.currentPath = f.pathfinderAStar.findPath(f.x, f.y, ball.x, ball.y);
-		//	}
+			add(new HUD);
 		}
 		
 		/* Reads the data from my levels created in Ogmo 2. It's a free, open source level editor: 

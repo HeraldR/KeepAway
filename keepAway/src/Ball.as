@@ -97,12 +97,13 @@ package
 			
 			if ( (tick1x == tick5x) && (tick1y == tick5y)) {
 				var a:Number = FP.angle(x, y, Input.mouseX, Input.mouseY);
-				if ( (a >= 225) && (a < 270) ) {
+				if ( (a >= 210) && (a < 270) ) {  // greater than 225 and less than 270 would give a 45 degree angle before pushing up. 
+												//	by increasing the angle by 15 degrees to 60 it makes the ball more likely to go up when going horizontally. this can be tweaked if it's too frequent
 					if (!collide("grid", x - 5, y - 5) ) {
 						x = x - 5;
 						y = y - 5;
 					}
-				} else if ( (a >= 270) && (a <= 315) ) {
+				} else if ( (a >= 270) && (a <= 330) ) {  // same idea here where 270 to 315 is increased to 330 for a 60 degree angle
 					if (!collide("grid", x + 5, y - 5) ) {
 						x = x + 5;
 						y = y - 5;

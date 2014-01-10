@@ -11,25 +11,18 @@ package
 	{
 		public var multiplierText:Text = new Text("x1");
 		public var multiplierNumber:uint = 1;
-		public var multiplierTimer:MultiplierTimer; // this needs to be refactored with the score hud
 		
-		public function MultiplierDisplay() 
+		public function MultiplierDisplay(xx:int, yy:int) 
 		{
 			multiplierText.color = 0xFF11FF;
 			graphic = multiplierText;
-			multiplierText.x = FP.width - 256;
-			multiplierText.y = 16;
-			type = "md";
-		}
-		
-		override public function update():void { 
-			if (multiplierTimer == null) { multiplierTimer = MultiplierTimer(world.classFirst(MultiplierTimer)); }
+			x = xx;
+			y = yy;
 		}
 		
 		public function increment():void {
 			multiplierNumber = multiplierNumber + 1;
 			multiplierText.text = "x" + String(multiplierNumber);
-			multiplierTimer.addTime(60);
 		}
 		
 	}

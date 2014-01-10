@@ -13,8 +13,10 @@ package
 		private var timerAdditionText:Text = new Text("0", 0, 0);
 		private var alphaTween:VarTween; 
 		
-		public function TimerAddition() 
+		public function TimerAddition(xx:int, yy:int) 
 		{
+			x = xx;
+			y = yy;
 			graphic = timerAdditionText;
 			timerAdditionText.color = 0x7FFF00;
 		}

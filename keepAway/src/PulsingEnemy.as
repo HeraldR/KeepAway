@@ -26,12 +26,15 @@ package
 			type = "pulsingenemy";
 		}
 		
+		override public function added():void {
+			super.added();
+			targetBall = world.typeFirst("ball") as Ball;
+		}
+		
 		override public function update():void {
 			if(targetBall != null) {
 				moveTowards(targetBall.x, targetBall.y, 1, "grid", true );
 				if (collide("ball", x, y)) {
-				//FP.world.removeAll();
-			//	FP.world = new Game(GC.LEVEL);// *price is wrong sound*
 				}
 			}
 		}
