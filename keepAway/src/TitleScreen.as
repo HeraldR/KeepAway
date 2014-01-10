@@ -52,7 +52,7 @@ package
 					addTween(slideLeft, true);
 					addTween(slideRight, true);
 				} else {
-					FP.world = new Game(GC.LEVEL);
+					FP.world = new Game(GC.LEVEL7);
 				}
 				
 			}		

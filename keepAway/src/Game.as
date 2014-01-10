@@ -42,8 +42,7 @@ package
 			map.type = "grid";
 			add(map);
 			
-			add(new PulsingEnemy((32 * 2), (32 * 2)));
-			add(new PathfindingEnemy((32 * 3), (32 * 2), _mapGrid, 5, GC.PULSEENEMY));
+			//add(new PathfindingEnemy((32 * 3), (32 * 2), _mapGrid, 5, GC.PULSEENEMY));
 			add(new HUD);
 		}
 		
@@ -72,6 +71,14 @@ package
 			
 			for each(e in mapXML.entities.scoreMultiplier) {
 				add(new Multiplier(int(e.@x), int(e.@y)));
+			}
+			
+			for each(e in mapXML.entities.scoreAddition) {
+				add(new Adder(int(e.@x), int(e.@y)));
+			}
+			
+			for each(e in mapXML.entities.scoreTally) {
+				add(new Tally(int(e.@x), int(e.@y)));
 			}
 			
 			for each (e in mapXML.entities.blueAStar) {

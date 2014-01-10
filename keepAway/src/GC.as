@@ -11,6 +11,7 @@ package
 		[Embed(source = "assets/levels/testlevel4.oel", mimeType = "application/octet-stream")] public static const LEVEL3:Class;
 		[Embed(source = "assets/levels/testlevel5.oel", mimeType = "application/octet-stream")] public static const LEVEL4:Class;
 		[Embed(source = "assets/levels/testlevel6.oel", mimeType = "application/octet-stream")]	public static const LEVEL6:Class;
+		[Embed(source = "assets/levels/testlevel7.oel", mimeType = "application/octet-stream")] public static const LEVEL7:Class;
 		[Embed(source = "assets/graphics/youWin.png")] public static const WINNER:Class;
 		[Embed(source = "assets/graphics/youLose.png")] public static const LOSER:Class;
 		[Embed(source = "assets/graphics/goal.png")] public static const GOAL:Class;
@@ -21,6 +22,8 @@ package
 		[Embed(source = "assets/graphics/ball.png")] public static const BALL:Class;
 		[Embed(source = "assets/graphics/ballmask.png")] public static const BALLMASK:Class;
 		[Embed(source = "assets/graphics/Multiplier.png")] public static const MULTIPLIER:Class;
+		[Embed(source = "assets/graphics/Adder.png")] public static const ADDER:Class;
+		[Embed(source = "assets/graphics/Tally.png")] public static const TALLY:Class;
 		
 		[Embed(source = "assets/graphics/blueEnemy.png")] public static const BLUEENEMY:Class;
 		public static const BLUE_DELAY:int = 5;

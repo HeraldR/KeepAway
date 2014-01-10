@@ -1,0 +1,97 @@
+<level width="800" height="600">
+  <collisionLayer exportMode="Bitstring">1111111111111111111111111
+1000000000000000000000001
+1000000001011010000000001
+1000000001011010000000001
+1000000101011010010000001
+1000010100000000010100001
+1001010100000000010101001
+1001010000000000000101001
+1001000000000000000001001
+1000000000000000000000001
+1000000000000000000000001
+1000111111111111111110001
+1000000000000000000000001
+1001111111111111111111001
+1000000000000000000000001
+1011111111111111111111101
+1000000000000000000000001
+1111111111111111111111111
+1111111111111111111111111</collisionLayer>
+  <entities>
+    <scoreMultiplier id="0" x="320" y="32" />
+    <scoreMultiplier id="1" x="288" y="32" />
+    <scoreMultiplier id="2" x="352" y="32" />
+    <scoreMultiplier id="3" x="384" y="32" />
+    <scoreMultiplier id="4" x="416" y="32" />
+    <scoreMultiplier id="5" x="448" y="32" />
+    <scoreMultiplier id="6" x="224" y="96" />
+    <scoreMultiplier id="7" x="160" y="128" />
+    <scoreMultiplier id="8" x="96" y="160" />
+    <scoreMultiplier id="9" x="544" y="96" />
+    <scoreMultiplier id="10" x="608" y="128" />
+    <scoreMultiplier id="11" x="672" y="160" />
+    <scoreAddition id="12" x="256" y="512" />
+    <scoreAddition id="13" x="192" y="512" />
+    <scoreAddition id="14" x="64" y="512" />
+    <scoreAddition id="15" x="96" y="512" />
+    <scoreAddition id="16" x="128" y="512" />
+    <scoreAddition id="17" x="160" y="512" />
+    <scoreAddition id="18" x="224" y="512" />
+    <scoreAddition id="19" x="288" y="512" />
+    <scoreAddition id="20" x="320" y="512" />
+    <scoreAddition id="21" x="352" y="512" />
+    <scoreAddition id="22" x="384" y="512" />
+    <scoreAddition id="23" x="416" y="512" />
+    <scoreAddition id="24" x="448" y="512" />
+    <scoreAddition id="25" x="480" y="512" />
+    <scoreAddition id="26" x="512" y="512" />
+    <scoreAddition id="27" x="544" y="512" />
+    <scoreAddition id="28" x="576" y="512" />
+    <scoreAddition id="29" x="608" y="512" />
+    <scoreAddition id="30" x="640" y="512" />
+    <scoreAddition id="31" x="672" y="512" />
+    <scoreAddition id="32" x="704" y="512" />
+    <scoreAddition id="33" x="672" y="448" />
+    <scoreAddition id="34" x="640" y="448" />
+    <scoreAddition id="35" x="544" y="448" />
+    <scoreAddition id="36" x="608" y="448" />
+    <scoreAddition id="37" x="576" y="448" />
+    <scoreAddition id="38" x="512" y="448" />
+    <scoreAddition id="39" x="480" y="448" />
+    <scoreAddition id="40" x="448" y="448" />
+    <scoreAddition id="41" x="416" y="448" />
+    <scoreAddition id="42" x="384" y="448" />
+    <scoreAddition id="43" x="352" y="448" />
+    <scoreAddition id="44" x="320" y="448" />
+    <scoreAddition id="45" x="320" y="448" />
+    <scoreAddition id="46" x="288" y="448" />
+    <scoreAddition id="47" x="256" y="448" />
+    <scoreAddition id="48" x="224" y="448" />
+    <scoreAddition id="49" x="224" y="448" />
+    <scoreAddition id="50" x="192" y="448" />
+    <scoreAddition id="51" x="160" y="448" />
+    <scoreAddition id="52" x="128" y="448" />
+    <scoreAddition id="53" x="96" y="448" />
+    <scoreAddition id="54" x="128" y="384" />
+    <scoreAddition id="55" x="160" y="384" />
+    <scoreAddition id="56" x="192" y="384" />
+    <scoreAddition id="57" x="224" y="384" />
+    <scoreAddition id="58" x="256" y="384" />
+    <scoreAddition id="59" x="288" y="384" />
+    <scoreAddition id="60" x="320" y="384" />
+    <scoreAddition id="61" x="352" y="384" />
+    <scoreAddition id="62" x="384" y="384" />
+    <scoreAddition id="63" x="384" y="384" />
+    <scoreAddition id="64" x="416" y="384" />
+    <scoreAddition id="65" x="448" y="384" />
+    <scoreAddition id="66" x="480" y="384" />
+    <scoreAddition id="67" x="512" y="384" />
+    <scoreAddition id="68" x="544" y="384" />
+    <scoreAddition id="69" x="576" y="384" />
+    <scoreAddition id="70" x="608" y="384" />
+    <scoreAddition id="71" x="640" y="384" />
+    <scoreTally id="72" x="352" y="320" NewValue0="0" />
+    <playerStart id="73" x="384" y="320" />
+  </entities>
+</level>
