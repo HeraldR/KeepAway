@@ -62,42 +62,25 @@
     <scoreAddition id="31" x="752" y="528" />
     <scoreAddition id="32" x="784" y="528" />
     <scoreAddition id="33" x="752" y="464" />
-    <scoreAddition id="34" x="720" y="464" />
     <scoreAddition id="35" x="624" y="464" />
     <scoreAddition id="36" x="688" y="464" />
-    <scoreAddition id="37" x="656" y="464" />
-    <scoreAddition id="38" x="592" y="464" />
     <scoreAddition id="39" x="560" y="464" />
-    <scoreAddition id="40" x="528" y="464" />
     <scoreAddition id="41" x="496" y="464" />
-    <scoreAddition id="42" x="464" y="464" />
-    <scoreAddition id="52" x="208" y="464" />
     <scoreAddition id="53" x="176" y="464" />
     <scoreAddition id="54" x="208" y="400" />
-    <scoreAddition id="55" x="240" y="400" />
     <scoreAddition id="56" x="272" y="400" />
-    <scoreAddition id="57" x="304" y="400" />
     <scoreAddition id="58" x="336" y="400" />
-    <scoreAddition id="59" x="368" y="400" />
     <scoreAddition id="65" x="528" y="400" />
-    <scoreAddition id="66" x="560" y="400" />
     <scoreAddition id="67" x="592" y="400" />
-    <scoreAddition id="68" x="624" y="400" />
     <scoreAddition id="69" x="656" y="400" />
-    <scoreAddition id="70" x="688" y="400" />
     <scoreAddition id="71" x="720" y="400" />
     <scoreTally id="72" x="432" y="336" NewValue0="0" />
     <playerStart id="74" x="464" y="336" />
-    <scoreAddition id="43" x="496" y="400" />
     <scoreAddition id="44" x="464" y="400" />
-    <scoreAddition id="45" x="432" y="400" />
     <scoreAddition id="46" x="400" y="400" />
     <scoreAddition id="47" x="432" y="464" />
-    <scoreAddition id="48" x="400" y="464" />
     <scoreAddition id="49" x="368" y="464" />
-    <scoreAddition id="50" x="336" y="464" />
     <scoreAddition id="51" x="304" y="464" />
-    <scoreAddition id="60" x="272" y="464" />
     <scoreAddition id="61" x="240" y="464" />
     <scoreMultiplier id="0" x="176" y="176" />
     <scoreMultiplier id="1" x="240" y="144" />
@@ -111,5 +94,8 @@
     <scoreMultiplier id="9" x="624" y="112" />
     <scoreMultiplier id="10" x="688" y="144" />
     <scoreMultiplier id="11" x="752" y="176" />
+    <blueAStar id="34" x="448" y="48" />
+    <columnEnemy id="37" x="816" y="368" />
+    <columnEnemy id="38" x="112" y="368" />
   </entities>
 </level>

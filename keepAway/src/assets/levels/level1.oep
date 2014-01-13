@@ -5,18 +5,18 @@
   <BackgroundColor A="255" R="125" G="160" B="255" />
   <GridColor A="255" R="255" G="240" B="90" />
   <LevelDefaultSize>
-    <Width>800</Width>
-    <Height>600</Height>
+    <Width>960</Width>
+    <Height>640</Height>
   </LevelDefaultSize>
   <LevelMinimumSize>
     <Width>800</Width>
     <Height>600</Height>
   </LevelMinimumSize>
   <LevelMaximumSize>
-    <Width>800</Width>
-    <Height>600</Height>
+    <Width>960</Width>
+    <Height>640</Height>
   </LevelMaximumSize>
-  <Filename>C:\Users\gipG\Documents\keepAway\src\assets\levels\level1.oep</Filename>
+  <Filename>C:\Users\gipG\Documents\GitHub\KeepAway\keepAway\src\assets\levels\level1.oep</Filename>
   <AngleMode>Radians</AngleMode>
   <CameraEnabled>false</CameraEnabled>
   <CameraSize>
@@ -29,8 +29,8 @@
     <LayerDefinition xsi:type="GridLayerDefinition">
       <Name>collisionLayer</Name>
       <Grid>
-        <Width>32</Width>
-        <Height>32</Height>
+        <Width>16</Width>
+        <Height>16</Height>
       </Grid>
       <ScrollFactor>
         <X>1</X>
@@ -42,8 +42,8 @@
     <LayerDefinition xsi:type="EntityLayerDefinition">
       <Name>entities</Name>
       <Grid>
-        <Width>32</Width>
-        <Height>32</Height>
+        <Width>16</Width>
+        <Height>16</Height>
       </Grid>
       <ScrollFactor>
         <X>1</X>
@@ -169,6 +169,38 @@
       </Origin>
       <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
         <RectColor A="255" R="128" G="255" B="128" />
+      </ImageDefinition>
+      <ValueDefinitions />
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="scoreTally" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>32</Width>
+        <Height>32</Height>
+      </Size>
+      <Origin>
+        <X>0</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="64" G="0" B="128" />
+      </ImageDefinition>
+      <ValueDefinitions>
+        <ValueDefinition xsi:type="IntValueDefinition" Name="NewValue0" Default="0" Min="0" Max="100" ShowSlider="false" />
+      </ValueDefinitions>
+      <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />
+    </EntityDefinition>
+    <EntityDefinition Name="scoreAddition" Limit="-1" ResizableX="false" ResizableY="false" Rotatable="false" RotateIncrement="15">
+      <Size>
+        <Width>32</Width>
+        <Height>32</Height>
+      </Size>
+      <Origin>
+        <X>0</X>
+        <Y>0</Y>
+      </Origin>
+      <ImageDefinition DrawMode="Rectangle" ImagePath="" Tiled="false">
+        <RectColor A="255" R="0" G="64" B="0" />
       </ImageDefinition>
       <ValueDefinitions />
       <NodesDefinition Enabled="false" Limit="-1" DrawMode="None" Ghost="false" />

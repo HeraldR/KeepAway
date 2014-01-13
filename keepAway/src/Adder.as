@@ -10,6 +10,7 @@ package
 	{
 		private var sprite:Spritemap = new Spritemap(GC.ADDER, 32 , 32);
 		private var hud:HUD;
+		private var hitTimer:uint = 0;
 		
 		public function Adder(xx:int, yy:int) 
 		{
@@ -24,9 +25,15 @@ package
 		}
 		
 		override public function update():void  {
+			super.update();
+			if (hud == null) { hud = HUD(world.classFirst(HUD)); }
 			if (collide("ball", x, y)) {
-				trace("collision");
+				if(hitTimer == 0) {
+				hitTimer = 120;
+				hud.adderHit(5);
+				}
 			}
+			if (hitTimer > 0) { hitTimer = hitTimer - 1; }
 		}
 	}
 

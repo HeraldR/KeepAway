@@ -2,12 +2,13 @@ package
 {
 	import net.flashpunk.Engine;
 	import net.flashpunk.FP;
+	[SWF(width = "960", height = "640")]
 	public class Main extends Engine
 	{
 		public function Main()
 		{
-			super(800, 600, 60, true);
-			FP.world = new TitleScreen();
+			super(960, 640, 60, true);
+			FP.world = new Game(GC.LEVEL11);
 			// uncomment to enable to debug console
 			//FP.console.enable();
 		}

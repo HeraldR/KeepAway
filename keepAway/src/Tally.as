@@ -19,14 +19,12 @@ package
 			setHitbox(32, 32, 0, 0);
 		}
 		
-		override public function added():void {
-			hud = world.classFirst(HUD) as HUD;
-		}
-		
 		override public function update():void  {
+			if (hud == null) { hud = HUD(world.classFirst(HUD)); }
 			if (collide("ball", x, y)) {
-				trace("collision");
+				hud.tally();
 			}
+				
 		}
 	}
 

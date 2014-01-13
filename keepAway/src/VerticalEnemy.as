@@ -40,7 +40,7 @@ package
 			
 			if (collide("ball", x, y)) {
 				FP.world.removeAll();
-				FP.world = new Game(GC.LEVEL); // *price is wrong sound*
+				FP.world = new Game(GC.LEVEL11); // *price is wrong sound*
 			}
 		}
 		

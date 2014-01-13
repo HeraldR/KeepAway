@@ -18,11 +18,17 @@ package
 			graphic = multiplierText;
 			x = xx;
 			y = yy;
+			multiplierText.size = 32;
 		}
 		
 		public function increment():void {
 			multiplierNumber = multiplierNumber + 1;
 			multiplierText.text = "x" + String(multiplierNumber);
+		}
+		
+		public function clear():void {
+			multiplierText.text = "x1";
+			multiplierNumber = 1;
 		}
 		
 	}

@@ -49,6 +49,7 @@ package
 					}
 				}
 			}
+			trace("targetball: ", targetBall.x);
 		}
 		
 		override public function added():void {

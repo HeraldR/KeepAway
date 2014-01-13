@@ -36,7 +36,7 @@ package
 			
 			// create an image of the grid and scale it the size of each grid tile
 			_mapImage = new Image(_mapGrid.data);
-			_mapImage.scale = 32;
+			_mapImage.scale = 16;
 			// assign this image to an entity and give it a type so that objects can check to collide with it
 			map = new Entity(0, 0, _mapImage, _mapGrid);
 			map.type = "grid";
@@ -54,7 +54,7 @@ package
 			var mapXML:XML = FP.getXML(mapData);
 			var e:XML;
 			
-			_mapGrid = new Grid(uint(mapXML.@width), uint(mapXML.@height), 32, 32, 0, 0);
+			_mapGrid = new Grid(uint(mapXML.@width), uint(mapXML.@height), 16, 16, 0, 0);
 			_mapGrid.loadFromString(String(mapXML.collisionLayer), "", "\n");
 			
 			//There is nothing magic here. Open up the level file and you can see that it's plain text. It makes this code pretty easy to understand.

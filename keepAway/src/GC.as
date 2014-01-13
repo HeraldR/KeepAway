@@ -12,6 +12,10 @@ package
 		[Embed(source = "assets/levels/testlevel5.oel", mimeType = "application/octet-stream")] public static const LEVEL4:Class;
 		[Embed(source = "assets/levels/testlevel6.oel", mimeType = "application/octet-stream")]	public static const LEVEL6:Class;
 		[Embed(source = "assets/levels/testlevel7.oel", mimeType = "application/octet-stream")] public static const LEVEL7:Class;
+		[Embed(source = "assets/levels/testlevel8.oel", mimeType = "application/octet-stream")] public static const LEVEL8:Class;
+		[Embed(source = "assets/levels/testlevel9.oel", mimeType = "application/octet-stream")] public static const LEVEL9:Class;
+		[Embed(source = "assets/levels/testlevel10.oel", mimeType = "application/octet-stream")] public static const LEVEL10:Class;
+		[Embed(source = "assets/levels/testlevel11.oel", mimeType = "application/octet-stream")] public static const LEVEL11:Class;
 		[Embed(source = "assets/graphics/youWin.png")] public static const WINNER:Class;
 		[Embed(source = "assets/graphics/youLose.png")] public static const LOSER:Class;
 		[Embed(source = "assets/graphics/goal.png")] public static const GOAL:Class;
