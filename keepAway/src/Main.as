@@ -8,7 +8,7 @@ package
 		public function Main()
 		{
 			super(960, 640, 60, true);
-			FP.world = new Game(GC.LEVEL11);
+			FP.world = new Game(GC.LEVEL13);
 			// uncomment to enable to debug console
 			//FP.console.enable();
 		}
